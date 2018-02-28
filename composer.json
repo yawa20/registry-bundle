@@ -4,6 +4,7 @@
     "type": "symfony-bundle",
     "keywords": ["symfony", "registry"],
     "homepage": "https://github.com/yawa20/registry-bundle",
+    "license": "MIT",
     "require": {
         "php": "^7.0",
         "symfony/framework-bundle": "4.0"
