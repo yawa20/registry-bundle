@@ -7,7 +7,7 @@
     "license": "MIT",
     "require": {
         "php": "^7.0",
-        "symfony/framework-bundle": ">=4.0"
+        "symfony/symfony": ">=4.0"
     },
     "authors": [
         {
