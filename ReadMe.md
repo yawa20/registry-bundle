@@ -22,7 +22,7 @@ services:
 ```
 
 
-any of item should implement Yawa20\RegistryBundle\Registry\RegistrableInterface
+any of item should implement Yawa20\RegistryBundle\Registrable\RegistrableInterface
 
 by default, registry accepts any item of RegistrableInterface.
 
