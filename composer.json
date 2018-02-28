@@ -1,0 +1,22 @@
+{
+    "name": "yawa20/registry-bundle",
+    "description": "Registry bundle, Allows to easy implement registry pattern",
+    "type": "symfony-bundle",
+    "keywords": ["symfony", "registry"],
+    "homepage": "https://github.com/yawa20/registry-bundle",
+    "require": {
+        "php": "^7.0",
+        "symfony/framework-bundle": "4.0"
+    },
+    "authors": [
+        {
+            "name": "Andrii Yakovlev",
+            "email": "yawa20@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Yawa20\\RegistryBundle\\": ""
+        }
+    }
+}
