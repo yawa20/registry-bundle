@@ -20,7 +20,7 @@ class SimpleRegistry implements RegistryInterface
     private $interface;
 
     /** @var RegistrableInterface[] */
-    private $items;
+    private $items = [];
 
     /**
      * SimpleRegistry constructor.
