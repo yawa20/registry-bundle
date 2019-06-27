@@ -10,6 +10,10 @@ use Yawa20\RegistryBundle\Exception\InvalidInterfaceRegistryException;
 use Yawa20\RegistryBundle\Exception\KeyNotFoundRegistryException;
 use Yawa20\RegistryBundle\Registrable\RegistrableInterface;
 
+/**
+ * Interface RegistryInterface
+ * @package Yawa20\RegistryBundle\Registry
+ */
 interface RegistryInterface
 {
     /**

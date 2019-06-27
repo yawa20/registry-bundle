@@ -16,7 +16,7 @@ use Yawa20\RegistryBundle\Registrable\RegistrableInterface;
  */
 class SimpleRegistry implements RegistryInterface
 {
-    /** @var string  */
+    /** @var string */
     private $interface;
 
     /** @var RegistrableInterface[] */

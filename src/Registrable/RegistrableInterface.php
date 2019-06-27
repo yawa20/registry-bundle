@@ -6,6 +6,10 @@
 
 namespace Yawa20\RegistryBundle\Registrable;
 
+/**
+ * Interface RegistrableInterface
+ * @package Yawa20\RegistryBundle\Registrable
+ */
 interface RegistrableInterface
 {
     /**
