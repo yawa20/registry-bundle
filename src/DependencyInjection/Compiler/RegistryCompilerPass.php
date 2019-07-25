@@ -9,7 +9,6 @@ namespace Yawa20\RegistryBundle\DependencyInjection\Compiler;
 use Symfony\Component\Config\Definition\Exception\InvalidConfigurationException;
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
-use Symfony\Component\DependencyInjection\Exception\ServiceNotFoundException;
 use Yawa20\RegistryBundle\Registry\RegistryInterface;
 
 /**
@@ -30,10 +29,7 @@ class RegistryCompilerPass implements CompilerPassInterface
         foreach ($registryItems as $itemName => $tagList) {
             $item = $container->getDefinition($itemName);
             foreach ($tagList as $tag) {
-                if (!$container->hasDefinition($tag['registry'])) {
-                    throw new ServiceNotFoundException("Registry ".$tag['registry']." not defined");
-                }
-                $registry = $container->getDefinition($tag['registry']);
+                $registry = $container->findDefinition($tag['registry']);
                 if (!in_array(RegistryInterface::class, class_implements($registry->getClass()))) {
                     $message = $registry->getClass()." is not instance of ".RegistryInterface::class;
                     throw new InvalidConfigurationException($message);

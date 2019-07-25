@@ -5,7 +5,7 @@
     "keywords": ["symfony", "registry"],
     "homepage": "https://github.com/yawa20/registry-bundle",
     "license": "MIT",
-    "version": "4.3.0",
+    "version": "4.3.1",
     "require": {
         "php": "^7.3",
         "symfony/dependency-injection": "^4.3",
