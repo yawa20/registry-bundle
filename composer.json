@@ -5,12 +5,12 @@
     "keywords": ["symfony", "registry"],
     "homepage": "https://github.com/yawa20/registry-bundle",
     "license": "MIT",
-    "version": "4.3.1",
+    "version": "5.0.0",
     "require": {
-        "php": "^7.3",
-        "symfony/dependency-injection": "^4.3",
-        "symfony/config": "^4.3",
-        "symfony/http-kernel": "^4.3"
+        "php": ">=7.3",
+        "symfony/dependency-injection": "^4.3|^5.0",
+        "symfony/config": "^4.3|^5.0",
+        "symfony/http-kernel": "^4.3|^5.0"
     },
     "authors": [
         {
